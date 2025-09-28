@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1",
+  "name": "OAuth Discovery Helper",
+  "description": "Returns OpenID Connect metadata for a given domain.",
+  "contact_email": "you@example.com",
+  "capabilities": [
+    {
+      "name": "discover_oidc",
+      "description": "Finds OIDC discovery metadata for a given domain.",
+      "url": "/discover_oidc",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain to search for OIDC metadata" }
+        },
+        "required": ["domain"]
+      },
+      "output_schema": {
+        "type": "object",
+        "description": "OIDC metadata as defined in OpenID Connect Discovery 1.0",
+        "additionalProperties": true
+      }
+    }
+  ]
+}
