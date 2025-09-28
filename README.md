@@ -14,3 +14,22 @@ Returns discovery metadata from a known `.well-known/openid-configuration` path.
 
 ```json
 { "domain": "login.microsoftonline.com" }
+```
+
+#### Response
+
+```json
+{
+  "issuer": "https://login.microsoftonline.com/common/v2.0",
+  "authorization_endpoint": "...",
+  "token_endpoint": "...",
+  "jwks_uri": "...",
+  ...
+}
+```
+
+### MCP Manifest
+
+The manifest is served at:
+
+GET /mcp-manifest.json
