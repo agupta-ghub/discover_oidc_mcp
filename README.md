@@ -2,6 +2,10 @@
 
 A lightweight MCP-compatible FastAPI service that discovers the OpenID Connect metadata for a given domain.
 
+This is currently deployed on Render, using free tier. 
+
+Heads up: Render’s free tier means there’s about a 50-second delay on first request after inactivity (cold start). But hey, it’s free and reliable enough for testing and demos!
+
 ---
 
 ## 📦 API Endpoint
